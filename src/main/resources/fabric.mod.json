@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "myaddon",
+  "version": "${version}",
+  "name": "MyAddon",
+  "description": "Meteor Client addon — ChunkFinder ESP",
+  "authors": ["YourName"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.myproject.addon.MyAddon"
+    ]
+  },
+  "mixins": [
+    "myaddon.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "meteor-client": "*"
+  }
+}
